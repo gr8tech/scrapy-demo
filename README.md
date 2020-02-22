@@ -26,7 +26,7 @@ class MySpider(scrapy.Spider):
         # results from the event will be stored in a Scrapy Item
         l = ItemLoader(item=EventItem(), response=response)))
         # add results for relevant fields into the Item Loader using
-        # add_xpath, add_value or 
+        # add_xpath, add_value
         # missing fields
         return l.load_item() 
  ```
